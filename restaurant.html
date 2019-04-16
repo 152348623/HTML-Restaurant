@@ -4,48 +4,55 @@
 <head>
   <meta charset="utf-8">
   <title>Page Title</title>
-
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="main.js"></script>
 </head>
 
 <body background="images/background.jpg">
-
   <div class="container">
-    <div class="container-top">
+    <header class="container-top">
       <div class="homepage">
-        <a href="index.html" class="homepage-images"><img src="images/header.jpg" /></a>
+        <a href="index.html"><img src="images/header.jpg" class="homepage-images"></a>
       </div>
-
       <div class="menu">
-        <a href="news.html">最新訊息 <span class="span"> /NEWS</span></a>
-        <div class="restaurant">
-          <button class="restaurant-btn" onclick="window.location.href='restaurant.html'"> 餐廳介紹 <span class="span">/
-              RESTAURANT INTRO</span>
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="restaurant-content">
-            <a href="#">自助餐 / BUFFET </a>
-            <a href="#">全家 / FAMILY MART</a>
-            <a href="#">咖哩森林 / FAMILY MART</a>
-            <a href="#">三顧茅廬 / FAMILY MART</a>
-            <a href="#">兩片吐司 / FAMILY MART</a>
-            <a href="#">橙廚義大利麵 / FAMILY MART</a>
-            <a href="#">漢堡 / FAMILY MART</a>
-          </div>
-        </div>
-        <a href="suggestion.html">意見箱 <span class="span">/ SUGGESTION</span></a>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <div class="footer-top">
-      <div class="information">
+        <a href="news.html" class="menu-a">最新訊息 <span class="span"> /NEWS</span></a>
+        
+          <div class="restaurant">
+            <button class="restaurant-btn" onclick="window.location.href='restaurant.html'"> 餐廳介紹 <span class="span">/
+                RESTAURANT INTRO</span>
+              <i class="fa fa-caret-down"></i>
+            </button>
 
+            <div class="restaurant-content">
+              <a href="#">自助餐 / BUFFET </a>
+              <a href="#">全家 / FAMILY MART</a>
+              <a href="#">咖哩森林 / FAMILY MART</a>
+              <a href="#">三顧茅廬 / FAMILY MART</a>
+              <a href="#">兩片吐司 / FAMILY MART</a>
+              <a href="#">橙廚義大利麵 / FAMILY MART</a>
+              <a href="#">漢堡 / FAMILY MART</a>
+            </div>
+          </div>
+      
+        <a href="suggestion.html" class="menu-a">意見箱 <span class="span">/ SUGGESTION</span></a>
+      </div>
+    </header>
+    <article class="container-bottom">
+      
+    </article>
+  </div>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-menu">
+        <a href="index.html" class="">回到首頁</a> <br>
+        <a href="news.html" class="">最新消息</a>  <br>
+        <a href="restaurant.html" class="">餐廳介紹</a> <br>
+        <a href="suggestion.html" class="">意見箱</a> <br>
       </div>
       <div class="information">
-        <div class="number">(02)2776-3786</div>
         <div class="address">台北市大安區建國南路一段81號</div>
+        <div class="number">(02)2776-3786</div>
       </div>
       <div class="social">
 
@@ -54,6 +61,7 @@
     <div class="footer-bottom">
       ccopyright 林孜頤 吳樂佳 陳姵文
     </div>
+
   </footer>
 
 </body>
