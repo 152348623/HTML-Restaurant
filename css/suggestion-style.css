@@ -8,23 +8,44 @@
     color: blanchedalmond;
     text-align: center;
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     background-color: black;
-    width: auto;
+    width: 100%;
+
+     font-family: 'Noto Sans TC', sans-serif;
 }
+.content-small{
+    color: rgb(230, 167, 91);
+    font-size: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: black;
+    width: 100%;
+    margin-bottom:20px; 
+}
+
 .suggestion-form{
     display: block;
     text-align: center;
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+    color: blanchedalmond;
   }
+  .name{
+      display: flex;
+      justify-content: center;
+  }
+
   .input-name{
       border: 1px solid rgb(243, 160, 82);
       border-radius: 4px;
       width: 300px;
       margin-bottom:20px;
       height: 40px; 
+  }
+  .textarea-sug{
+      display: flex;
+      justify-content: center;
   }
   .input-area{
       border:1px solid rgb(243, 160, 82);
@@ -38,7 +59,15 @@
     width: 300px;
     background-color: white;
     height: 40px; 
+    font-family: 'Oswald', sans-serif;
+    margin-left: 80px;
+    font-size: 20px;
   }
-  .star{
-      background-color: white;
+  .submit-btn:hover{
+    width: 320px;
+    height: 50px;
+    background-color: rgb(5, 5, 5);
+    color: white;
+    transition: all .5s ease;
   }
+

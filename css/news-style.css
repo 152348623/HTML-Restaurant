@@ -1,3 +1,65 @@
+	.container-bottom{
+		background-color: rgb(29, 29, 28);
+	}
+	.news-font{
+		color:#F1AC67;
+		font-family: 'Arvo';
+		font-size: 40px;
+		text-align: center;
+		height: 70px;
+		padding: 15px 0px 15px 0px;
+		margin: 0px 0px 50px 0px;
+		background-color: rgb(37, 37, 36);
+	}
+	.news{
+		display: flex;
+		margin-left: 70px;
+	}
+	.news-icon{
+		justify-content: center;
+		text-align: center;
+		align-content: center;
+
+	}
+	.border-img{
+		width: 250px;
+		height: 250px;
+		border: 3px solid rgb(97, 94, 92);
+		margin-bottom: 50px;
+	}
+	.news-img{
+		width: 220px;
+		height: 220px;
+		margin: 12px;
+		background-color: aliceblue;
+	}
+	.border-img:hover{
+		transition: all .3s ease;
+		border: 3px solid #F1AC67;
+	}
+.news-content-border{
+	height: 250px;
+	 border: 3px solid rgb(255, 255, 255);
+	border-width: 1px 0px 1px 0px; 
+	margin-left: 12px;
+	padding: 15px 0px 15px 0px;
+	width: 920px;
+}
+.news-content{
+	margin-left: 30px;
+	color: white;
+	font-size: 26px;
+	height: 220px;
+	background-color: rgb(29, 29, 28);
+	padding-top: 82px;
+	font-family: "Open Sans","微軟正黑體",sans-serif;
+}
+.news-content-border:hover{
+	border: 3px solid rgb(148, 94, 39);
+	border-width: 1px 0px 1px 0px;
+	transition: all .3s ease;
+}
+	
 	/*設置div樣式的整體佈局*/
 	.page-icon{
 		margin:20px 0 0 0;/*設置距離頂部20像素*/
@@ -7,23 +69,26 @@
 	
 	/*設置共有的的樣式佈局，主要是進行代碼優化，提高運行效率*/
 	.page-icon a,.page-disabled,.page-next{
-		border:1px solid #ccc;
+		border:2px solid rgb(255, 255, 255);
 		border-radius:3px;
-		padding:4px 10px 5px;
-		font-size:14PX;/*修復行內元素之間空隙間隔*/
+		padding:25px;
+		font-size:18px;/*修復行內元素之間空隙間隔*/
 		margin-right:10px;
+		font-family: 'Arvo',"微軟正黑體",sans-serif;
 	}
 	
 	/*對 a 標籤進行樣式佈局 */
 	.page-icon a{
 		text-decoration:none;/*取消鏈接的下劃線*/
-		color:#005aa0;
+		color:#e9ac67;
+
 	}
 	
 	.page-current{
-		color:#ff6600;
-		padding:4px 10px 5px;
-		font-size:14PX;/*修復行內元素之間空隙間隔*/
+		color:#ac6e46;
+		padding:20px;
+		margin-right: 10px;
+		font-size:25px;/*修復行內元素之間空隙間隔*/
 	}
 	
 	.page-disabled{
@@ -36,6 +101,7 @@
 		width:5px;
 		height:9px;
 		background-image:url(http://img.mukewang.com/547fdbc60001bab900880700.gif);/*獲取圖標的背景鏈接*/
+
 	}
 	.page-disabled i{
 		background-position:-80px -608px;

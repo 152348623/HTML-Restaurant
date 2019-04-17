@@ -51,13 +51,20 @@
       </div>
     </header>
     <article class="container-bottom">
-        <div class="content">給點意見 使學餐變得更美好...</div>
+        <div class="content">給點建議 使學餐變得更美好...</div>
+        <div class="content-small">Ex: 價錢太貴、店員很兇、看到帥哥美女...</div>
       <div>
-        <form method="GET" action="suggestion.html" >
-          <input type="text" id="suggestion" name="name" value="name" class="input-name"><br/>
-          <textarea name="textarea" id="suggestion" cols="30" rows="10" class="input-area"></textarea><br/>
-          <input type="submit" value= "提交意見" class="submit-btn"><br/>
-        </form>
+        <form method="GET" action="suggestion.html" class="suggestion-form" >
+         <div class="name">
+           <div class="restaurant-name">餐廳名稱：</div>
+            <input type="text" id="suggestion" name="name" value="" class="input-name"><br/>
+         </div>
+         <div class="textarea-sug">
+            <div class="your-sug">你的建議：</div> 
+            <textarea name="textarea" id="suggestion" cols="30" rows="10" class="input-area"></textarea><br/>          
+         </div>
+         <input type="submit" value= "SUBMIT" class="submit-btn"><br/>
+          </form>
       </div>
       
     </article>
