@@ -1,40 +1,50 @@
 <!DOCTYPE <!DOCTYPE <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <title>Page Title</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="main.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans+TC" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="flexslider.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="jquery.flexslider.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+        $('.flexslider').flexslider();
+      });
+    </script>
+  </head>
 
-<body background="images/background.jpg">
-  <div class="container">
+<body>
+  <div class="container" style="background:url('/images/background.jpg')">
     <header class="container-top">
       <div class="homepage">
         <a href="index.html"><img src="images/header.jpg" class="homepage-images"></a>
       </div>
       <div class="menu">
         <a href="news.html" class="menu-a">最新訊息 <span class="span"> /NEWS</span></a>
-        
-          <div class="restaurant">
-            <button class="restaurant-btn" onclick="window.location.href='restaurant.html'"> 餐廳介紹 <span class="span">/
-                RESTAURANT INTRO</span>
-              <i class="fa fa-caret-down"></i>
-            </button>
+        <div class="restaurant">
+          <button class="restaurant-btn" onclick="window.location.href='restaurant.html'"> 餐廳介紹 <span class="span">/
+              RESTAURANT INTRO</span>
+            <i class="fa fa-caret-down"></i>
+          </button>
 
-            <div class="restaurant-content">
-              <a href="#">自助餐 / BUFFET </a>
-              <a href="#">全家 / FAMILY MART</a>
-              <a href="#">咖哩森林 / FAMILY MART</a>
-              <a href="#">三顧茅廬 / FAMILY MART</a>
-              <a href="#">兩片吐司 / FAMILY MART</a>
-              <a href="#">橙廚義大利麵 / FAMILY MART</a>
-              <a href="#">漢堡 / FAMILY MART</a>
-            </div>
+          <div class="restaurant-content">
+            <a href="#">好日食堂</a>
+            <a href="#">全家</a>
+            <a href="#">咖哩森林 </a>
+            <a href="#">三顧茅廬 </a>
+            <a href="#">兩片吐司</a>
+            <a href="#">橙廚義大利麵</a>
+            <a href="#">威肯漢堡</a>
           </div>
-      
+        </div>
+
         <a href="suggestion.html" class="menu-a">意見箱 <span class="span">/ SUGGESTION</span></a>
       </div>
     </header>
@@ -45,22 +55,41 @@
   <footer class="footer">
     <div class="footer-top">
       <div class="footer-menu">
-        <a href="index.html" class="">回到首頁</a> <br>
-        <a href="news.html" class="">最新消息</a>  <br>
-        <a href="restaurant.html" class="">餐廳介紹</a> <br>
-        <a href="suggestion.html" class="">意見箱</a> <br>
+        <a href="index.html" class="footer-menu-content">回到首頁</a>
+        <a href="news.html" class="footer-menu-content">最新消息</a>
+        <a href="restaurant.html" class="footer-menu-content">餐廳介紹</a>
+        <a href="suggestion.html" class="footer-menu-content">意見箱</a>
       </div>
-      <div class="information">
-        <div class="address">台北市大安區建國南路一段81號</div>
-        <div class="number">(02)2776-3786</div>
+      <div class="footer-address">
+        <a class="list-group-item" href="https://reurl.cc/xK1Zb">
+          <i class="fas fa-map-marker-alt fa-2x" style="color: #b67358;width:38px;height: 38px;text-align: center;"></i>
+          <div class="footer-address-content">
+            10655 台北市大安區<br>
+            建國南路一段81號
+          </div>
+        </a>
+      </div>
+      <div class="footer-number">
+        <div class="footer-number-item">
+          <i class="fas fa-phone fa-2x" style="color: #5f995a;;width:38px;height: 38px;"></i>
+          <div class="footer-number-content">
+            (02)2776-3786
+          </div>
+        </div>
       </div>
       <div class="social">
-
+        <a class="list-group-item" href="https://www.facebook.com/taipeitechdormfoodcourt/">
+          <i class="fab fa-facebook-square fa-3x" style="color: #5497c4;width:48px;height: 48px;"></i>
+        </a>
       </div>
+      <div class="QRcode">
+        <img src="images/QR.jpg" alt="Facebook連結" class="QRCode-img">
+      </div>
+
     </div>
     <div class="footer-bottom">
-      ccopyright 林孜頤 吳樂佳 陳姵文
-    </div>
+        copyright © 林孜頤 吳樂佳 陳姵文 網頁設計
+      </div>
 
   </footer>
 

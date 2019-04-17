@@ -1,0 +1,44 @@
+
+.container-bottom{
+
+    text-align: center;
+}
+.content{
+    font-size: 30px;
+    color: blanchedalmond;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: black;
+    width: auto;
+}
+.suggestion-form{
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
+  .input-name{
+      border: 1px solid rgb(243, 160, 82);
+      border-radius: 4px;
+      width: 300px;
+      margin-bottom:20px;
+      height: 40px; 
+  }
+  .input-area{
+      border:1px solid rgb(243, 160, 82);
+      border-radius: 4px;
+      width: 300px;
+      margin-bottom: 20px;
+  }
+  .submit-btn{
+    border:2px solid rgb(243, 160, 82);
+    border-radius: 4px;
+    width: 300px;
+    background-color: white;
+    height: 40px; 
+  }
+  .star{
+      background-color: white;
+  }
