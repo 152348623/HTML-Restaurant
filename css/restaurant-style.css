@@ -43,3 +43,13 @@ th, td{
 thead th{
     text-align: center;
 }
+.curry-font{
+		color:#F1AC67;
+		font-family: 'Arvo';
+		font-size: 40px;
+		text-align: center;
+		height: 70px;
+		padding: 15px 0px 15px 0px;
+		margin: 0px 0px 50px 0px;
+		background-color: rgb(37, 37, 36);
+	}
