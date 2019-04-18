@@ -43,13 +43,18 @@ th, td{
 thead th{
     text-align: center;
 }
-.curry-font{
+.restaurant-font{
 		color:#F1AC67;
-		font-family: 'Arvo';
+		font-family: 'Arvo','微軟正黑體';
 		font-size: 40px;
 		text-align: center;
-		height: 70px;
-		padding: 15px 0px 15px 0px;
+		height: 100px;
+		padding: 30px 0px 30px 0px;
 		margin: 0px 0px 50px 0px;
 		background-color: rgb(37, 37, 36);
 	}
+.restaurant-img{
+    width: 800px;
+    height: 1150px;
+    padding: 100px 50px 100px 50px;
+}
