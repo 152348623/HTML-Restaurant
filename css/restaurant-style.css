@@ -1,5 +1,11 @@
+html{
+    scroll-behavior:smooth;
+}
+
 .container-bottom{
     background-color: rgb(29, 29, 28);
+    text-align: center;
+    height: 1700px;
 }
 
 .restaurant-logos{
@@ -13,4 +19,27 @@
 	height: 400px;
 	margin: 12px;
 	background-color: aliceblue;
+}
+
+#toast-head, #curry-head{
+    height: 250;
+    width: 250;
+    padding: 25px;
+}
+
+table{
+    border-collapse: collapse;
+    background-color: aliceblue;
+    width: 50%;
+    height: 75%;
+}
+
+th, td{
+    height: 12px; 
+    text-align: left;
+    border-bottom: 1px solid rgb(29, 29, 28);
+}
+
+thead th{
+    text-align: center;
 }
