@@ -80,7 +80,7 @@ body {
   margin-right: 60px;
   text-align: center;
 }
-  
+
   /* Dropdown button */
 .restaurant .restaurant-btn {
   font-size: 20px; 
@@ -136,6 +136,7 @@ body {
 .restaurant:hover .restaurant-content {
   display: block;
 }
+
 /* ------------------------------------------------------*/
 .container-bottom{
   height: 1307px;
