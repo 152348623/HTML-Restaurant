@@ -20,10 +20,49 @@
         $('.flexslider').flexslider();
       });
     </script>
+    <script type="text/javascript">
+      $(function() {
+          /* 按下GoTop按鈕時的事件 */
+          $('#gotop').click(function(){
+              $('html,body').animate({ scrollTop: 0 }, 'quick');   /* 返回到最頂上 */
+              return false;
+          });
+          
+          /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+          $(window).scroll(function() {
+              if ( $(this).scrollTop() > 400){
+                  $('#gotop').fadeIn();
+              } else {
+                  $('#gotop').fadeOut();
+              }
+          });
+      });
+      </script>
+<script type="text/javascript">
+  var isChange = false;
+
+  $(function () {
+
+      $("input,textarea,select").change(function () {
+          isChange = true;
+          $(this).addClass("editing");
+      });
+      
+      $(window).bind('beforeunload', function (e) {
+          if (isChange || $(".editing").get().length > 0) {
+              return '是否離開';
+          }
+      })
+      $("input:submit").click(function () {
+    $(window).unbind('beforeunload');
+});
+  });
+
+</script>
   </head>
 
 <body>
-  <div class="container" style="background:url('/images/background.jpg')">
+  <div class="container" style="background:url('images/background.jpg')">
     <header class="container-top">
       <div class="homepage">
         <a href="index.html"><img src="images/header.jpg" class="homepage-images"></a>
@@ -51,17 +90,22 @@
       </div>
     </header>
     <article class="container-bottom">
+        <div id="gotop">˄</div>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="now-breadcrumb">意見箱</li>
+          </ul>
         <div class="content">給點建議 使學餐變得更美好...</div>
         <div class="content-small">Ex: 價錢太貴、店員很兇、看到帥哥美女...</div>
       <div>
         <form method="GET" action="suggestion.html" class="suggestion-form" >
          <div class="name">
            <div class="restaurant-name">餐廳名稱：</div>
-            <input type="text" id="suggestion" name="name" value="" class="input-name"><br/>
+            <input type="text" id="suggestion" name="name" value="" class="input-name" required><br/>
          </div>
          <div class="textarea-sug">
             <div class="your-sug">你的建議：</div> 
-            <textarea name="textarea" id="suggestion" cols="30" rows="10" class="input-area"></textarea><br/>          
+            <textarea name="textarea" id="suggestion" cols="30" rows="10" class="input-area" required></textarea><br/>          
          </div>
          <input type="submit" value= "SUBMIT" class="submit-btn"><br/>
           </form>
@@ -78,7 +122,7 @@
         <a href="suggestion.html" class="footer-menu-content">意見箱</a>
       </div>
       <div class="footer-address">
-        <a class="list-group-item" href="https://reurl.cc/xK1Zb">
+        <a class="list-group-item footer-address-item" href="https://reurl.cc/xK1Zb">
           <i class="fas fa-map-marker-alt fa-2x" style="color: #b67358;width:38px;height: 38px;text-align: center;"></i>
           <div class="footer-address-content">
             10655 台北市大安區<br>

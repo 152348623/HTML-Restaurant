@@ -6,6 +6,21 @@ html{
 *,*:before,*:after {
 	box-sizing: inherit
 }
+#gotop {
+  position: fixed;
+  border-radius: 50px;
+  right: 20px;
+  bottom: 30px;
+  padding: 10px 16px;
+  font-size: 25px;
+  background: rgba(228, 211, 211, 0.36);
+  color: #FAFCFD;
+  cursor: pointer;
+  z-index: 1000;
+}
+#gotop:hover{
+  background:  rgb(173, 100, 40);
+}
 body {
     background-color: black;
     width: 1281px;
@@ -200,7 +215,7 @@ body {
 
 .footer{
   background-color: black;
-  height: 345px;
+  height: 300px;
   width: 100%;
 }
 .footer-top{
@@ -229,17 +244,27 @@ body {
   display: flex;
   font-size: 19px;
 }
+.footer-address-item:hover
+{
+  color:#d6815d;
+  transition: all .5s ease;
+
+}
 .footer-address{
   padding: 124px 70px 124px 0px;
 }
+
 .footer-address-content{
   margin-left: 12px;
   height: 48px;
   width: 170px;
   font-family: 'Oswald', sans-serif;
+}
+.footer-address-content:hover{
+  color: #F1AC67;
+  transition: all .6s ease;
 
 }
-
 .footer-number-item{
   text-align: center;
   align-items: center;
@@ -259,6 +284,9 @@ body {
 .social .list-group-item{
   padding: 124px 50px 124px 0px;
 }
+.fa-facebook-square:hover{
+  color:blue;
+}
 .QRcode{
   text-align: center;
   padding: 84px 0px 86px 0px;
@@ -275,9 +303,44 @@ body {
   color: beige;
   text-align: center;
   font-size: 12px;
-  padding: 10px 0px 27px 0px;
+  padding: 10px 0px 15px 0px;
   font-family: 'Oswald', 'Noto Sans TC',sans-serif;
 
 }
-
+/* Style the list */
+ul.breadcrumb {
+	margin-left: 30px;
+  list-style: none;
+  text-align: initial;
+	/* background-color: #eee; */
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+	display: inline;
+	font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+	padding: 8px;
+	color: white;
+	content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+	color: #F1AC67;
+	text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+	color: #ac6e46;
+	text-decoration: underline;
+  }
+  li.now-breadcrumb{
+	color: white;
+	font-size:10px;
+  }
 

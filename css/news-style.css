@@ -11,6 +11,7 @@
 		margin: 0px 0px 50px 0px;
 		background-color: rgb(37, 37, 36);
 	}
+	
 	.news{
 		display: flex;
 		margin-left: 70px;
@@ -112,3 +113,4 @@
 		background-position:-62px -608px;
 		margin-left:3px;
 	}
+

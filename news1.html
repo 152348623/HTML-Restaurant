@@ -20,6 +20,24 @@
             $('.flexslider').flexslider();
         });
     </script>
+    <script type="text/javascript">
+        $(function() {
+            /* 按下GoTop按鈕時的事件 */
+            $('#gotop').click(function(){
+                $('html,body').animate({ scrollTop: 0 }, 'quick');   /* 返回到最頂上 */
+                return false;
+            });
+            
+            /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 400){
+                    $('#gotop').fadeIn();
+                } else {
+                    $('#gotop').fadeOut();
+                }
+            });
+        });
+        </script>
 </head>
 
 <body>
@@ -52,7 +70,12 @@
             </div>
         </header>
         <article class="container-bottom">
+                <ul class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="now-breadcrumb">最新消息</li>
+                      </ul>
             <div class="news-font">[ NEWS ]</div>
+            <div id="gotop">˄</div>
             <div class="news">
                 <div class="border-img">
                     <img src="images/curry.png" alt="" class="news-img">

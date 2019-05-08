@@ -18,6 +18,24 @@
       $('.flexslider').flexslider();
     });
   </script>
+<script type="text/javascript">
+  $(function() {
+      /* 按下GoTop按鈕時的事件 */
+      $('#gotop').click(function(){
+          $('html,body').animate({ scrollTop: 0 }, 'quick');   /* 返回到最頂上 */
+          return false;
+      });
+      
+      /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+      $(window).scroll(function() {
+          if ( $(this).scrollTop() > 400){
+              $('#gotop').fadeIn();
+          } else {
+              $('#gotop').fadeOut();
+          }
+      });
+  });
+  </script>
 </head>
 
 <body>
@@ -27,10 +45,9 @@
         <a href="index.html"><img src="images/header.jpg" class="homepage-images"></a>
       </div>
       <div class="menu">
-        <a href="news.html" class="menu-a">最新訊息 <span class="span"> /NEWS</span></a>
+        <a href="news.html" class="menu-a">最新訊息</a>
         <div class="restaurant">
-          <button class="restaurant-btn" onclick="window.location.href='restaurant.html'"> 餐廳介紹 <span class="span">/
-              RESTAURANT INTRO</span>
+          <button class="restaurant-btn" onclick="window.location.href='restaurant.html'"> 餐廳介紹
             <i class="fa fa-caret-down"></i>
           </button>
 
@@ -45,7 +62,7 @@
           </div>
         </div>
 
-        <a href="suggestion.html" class="menu-a">意見箱 <span class="span">/ SUGGESTION</span></a>
+        <a href="suggestion.html" class="menu-a">意見箱</a>
       </div>
     </header>
     <article class="container-bottom">
@@ -62,6 +79,7 @@
           </li>
         </ul>
       </div>
+      <div id="gotop">˄</div>
       <div class="container-inf">
         <img src="images/map.jpg" alt="" class="map-img">
         <div class="information">
@@ -127,6 +145,7 @@
       </div>
 
   </footer>
+
 
 </body>
 

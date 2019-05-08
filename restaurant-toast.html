@@ -20,6 +20,24 @@
         $('.flexslider').flexslider();
       });
     </script>
+    <script type="text/javascript">
+      $(function() {
+          /* 按下GoTop按鈕時的事件 */
+          $('#gotop').click(function(){
+              $('html,body').animate({ scrollTop: 0 }, 'quick');   /* 返回到最頂上 */
+              return false;
+          });
+          
+          /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+          $(window).scroll(function() {
+              if ( $(this).scrollTop() > 400){
+                  $('#gotop').fadeIn();
+              } else {
+                  $('#gotop').fadeOut();
+              }
+          });
+      });
+      </script>
   </head>
 
 <body>
@@ -50,6 +68,12 @@
       </div>
     </header>
     <article class="container-bottom">
+        <div id="gotop">˄</div>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="restaurant.html">餐廳介紹</a></li>
+            <li class="now-breadcrumb">兩片吐司</li>
+          </ul>
       <div class="restaurant-font"> [ 兩片吐司 ]</div>
         <img src="images/twoMenu.jpg" alt="兩片吐司" class="restaurant-img">
 
